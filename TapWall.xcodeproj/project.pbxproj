@@ -15,6 +15,7 @@
 		BB8417E31B61E7FD00218EBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8417E21B61E7FD00218EBA /* Images.xcassets */; };
 		BB8417E61B61E7FD00218EBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8417E41B61E7FD00218EBA /* LaunchScreen.xib */; };
 		BB8417F21B61E7FD00218EBA /* TapWallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8417F11B61E7FD00218EBA /* TapWallTests.swift */; };
+		BBC0049E1B70703A00AB6BFB /* WelcomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0049D1B70703A00AB6BFB /* WelcomeScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BB8417EB1B61E7FD00218EBA /* TapWallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapWallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8417F01B61E7FD00218EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB8417F11B61E7FD00218EBA /* TapWallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapWallTests.swift; sourceTree = "<group>"; };
+		BBC0049D1B70703A00AB6BFB /* WelcomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				BB8417D71B61E7FD00218EBA /* AppDelegate.swift */,
 				BB8417D91B61E7FD00218EBA /* GameScene.sks */,
 				BB8417DB1B61E7FD00218EBA /* GameScene.swift */,
+				BBC0049D1B70703A00AB6BFB /* WelcomeScene.swift */,
 				BB8417DD1B61E7FD00218EBA /* GameViewController.swift */,
 				BB8417DF1B61E7FD00218EBA /* Main.storyboard */,
 				BB8417E21B61E7FD00218EBA /* Images.xcassets */,
@@ -167,6 +170,7 @@
 				TargetAttributes = {
 					BB8417D11B61E7FD00218EBA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8V53KA47LM;
 					};
 					BB8417EA1B61E7FD00218EBA = {
 						CreatedOnToolsVersion = 6.4;
@@ -222,6 +226,7 @@
 				BB8417DC1B61E7FD00218EBA /* GameScene.swift in Sources */,
 				BB8417DE1B61E7FD00218EBA /* GameViewController.swift in Sources */,
 				BB8417D81B61E7FD00218EBA /* AppDelegate.swift in Sources */,
+				BBC0049E1B70703A00AB6BFB /* WelcomeScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +355,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TapWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -361,9 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TapWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
